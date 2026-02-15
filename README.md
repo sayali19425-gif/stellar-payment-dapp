@@ -75,12 +75,15 @@ https://horizon-testnet.stellar.org
 ##  Screenshots
 ### 🔹 Wallet Connected
 ![Wallet Connected](wallet-connected.png)
+<img width="1917" height="955" alt="wallet-connected png" src="https://github.com/user-attachments/assets/467382f3-1870-4aad-aaf0-0d33ce02ec44" />
 
 ### 🔹 Balance Displayed
 ![Balance Displayed](balance-displayed.png)
+<img width="950" height="909" alt="balance-displayed png" src="https://github.com/user-attachments/assets/23dbc9e6-c00d-4284-aaf0-3934bd90e5b1" />
 
 ### 🔹 Transaction Result Displayed
 ![Transaction Result](transaction-result.png)
+<img width="1915" height="928" alt="transaction-result png" src="https://github.com/user-attachments/assets/5a7f7d94-8e9f-420f-885f-1d9f166e6042" />
 
 
 ##  Project Structure

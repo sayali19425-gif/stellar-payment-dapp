@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Stellar Payment Dapp</title>
+  </head>
+  <body>
+    <h1>Stellar Testnet Payment</h1>
+
+    
+    <button id="connectBtn">Connect Wallet</button>
+    <button id="disconnectBtn">Disconnect Wallet</button>
+
+    <p><strong>Wallet Address:</strong> <span id="walletAddress"></span></p>
+    <p><strong>Balance:</strong> <span id="balance"></span></p>
+
+   
+    <input type="text" id="destination" placeholder="Destination Address">
+    <br><br>
+    <input type="number" id="amount" placeholder="Amount (XLM)">
+    <br><br>
+    <button id="sendBtn">Send XLM</button>
+
+    <p id="message"></p>
+
+    
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

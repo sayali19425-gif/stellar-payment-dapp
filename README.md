@@ -72,6 +72,17 @@ https://horizon-testnet.stellar.org
 
 ---
 
+##  Screenshots
+### 🔹 Wallet Connected
+![Wallet Connected](wallet-connected.png)
+
+### 🔹 Balance Displayed
+![Balance Displayed](balance-displayed.png)
+
+### 🔹 Transaction Result Displayed
+![Transaction Result](transaction-result.png)
+
+
 ##  Project Structure
 
 stellar-payment-dapp/

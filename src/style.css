@@ -25,11 +25,11 @@ a:hover {
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: hsl(0, 25%, 2%);
 }
 
 h1 {
-  color: #2c3e50;
+  color: hsl(211, 18%, 34%);
 }
 
 #app {

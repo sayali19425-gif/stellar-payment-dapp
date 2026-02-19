@@ -1,3 +1,4 @@
+import "./style.css";
 import* as StellarSdk from "@stellar/stellar-sdk";
 import { requestAccess, getAddress, signTransaction } from "@stellar/freighter-api";
 

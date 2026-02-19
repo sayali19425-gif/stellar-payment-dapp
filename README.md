@@ -119,7 +119,7 @@ stellar-dapp/
 
 ### 5️. Open in Browser
 Open the URL shown in terminal (usually):
-    http://localhost:5173
+    [http://localhost:5173](http://localhost:5173/)
 
 ---
 

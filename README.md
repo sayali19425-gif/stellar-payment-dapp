@@ -19,6 +19,7 @@ This project demonstrates basic blockchain payment functionality using Stellar S
 
 - HTML
 - JavaScript (ES6)
+- Vite
 - Stellar SDK
 - Freighter Wallet API
 - Stellar Testnet
@@ -88,24 +89,59 @@ https://horizon-testnet.stellar.org
 
 ##  Project Structure
 
-stellar-payment-dapp/
+stellar-dapp/
 │
+├── public/
+├── src/
+│ ├── main.js
+│ ├── counter.js
+│ ├── style.css
+│
+├── .env
+├── .gitignore
 ├── index.html
-└── src/
-    └── main.js
+├── package.json
+├── vite.config.js
+└── README.md
+---
 
+##  Installation & Setup
+
+### 1️. Clone the Repository
+### 2️. Open the Project Folder
+    cd stellar-dapp
+
+### 3️. Install Dependencies
+    npm install
+
+### 4️. Run the Development Server
+    npm run dev
+
+### 5️. Open in Browser
+Open the URL shown in terminal (usually):
+    http://localhost:5173
 
 ---
 
-##  How To Run This Project
+##  Requirements
 
-1. Clone the repository
-2. Install dependencies using:
-   npm install
-3. Run using local server (Vite or Live Server)
-4. Install Freighter Wallet extension
-5. Make sure wallet is connected to Testnet
-6. Ensure account has test XLM
+- Node.js installed
+- Freighter Wallet extension installed in browser
+- Stellar Testnet account funded with test XLM
+
+---
+
+##  Network Configuration
+
+This project uses:
+
+- Stellar Testnet
+- Horizon Testnet API
+
+Environment variables are stored in `.env` file:
+
+NEXT_PUBLIC_STELLAR_NETWORK=testnet
+NEXT_PUBLIC_HORIZON_URL=https://horizon-testnet.stellar.org
 
 ---
 
@@ -122,6 +158,7 @@ Through this project I learned:
 ---
 
 ##  Author
+Developed as part of learning and academic practice in Web3 and Blockchain development.
 
 Sayali  
 Web3 & Blockchain Learner

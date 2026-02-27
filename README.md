@@ -1,16 +1,142 @@
-# React + Vite
+# StellarPay — Simple Payment dApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal Stellar payment dApp built for **Level 1 (White Belt)** of the Stellar dApp challenge. Connect your Freighter wallet and send XLM on the Stellar testnet in seconds.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Screenshots
 
-## React Compiler
+### Wallet Connected
+![Wallet Connected](./screenshots/connected.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Balance Displayed
+![Balance Displayed](./screenshots/balance.png)
 
-## Expanding the ESLint configuration
+### Successful Transaction
+![Successful Transaction](./screenshots/transaction.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- 🔗 **Wallet Connection** — Connect & disconnect Freighter wallet
+- 💰 **Balance Display** — Live XLM balance fetched from Stellar Horizon
+- 📤 **Send XLM** — Full transaction flow with optional memo
+- ✅ **Transaction Feedback** — Success/failure state with transaction hash
+- 🔍 **Explorer Link** — View confirmed transactions on stellar.expert
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| React 18 | UI framework |
+| Vite | Build tool |
+| @stellar/stellar-sdk | Transaction building & Horizon API |
+| @stellar/freighter-api | Wallet connection & signing |
+
+---
+
+## ⚙️ Setup Instructions
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) v18 or higher
+- [Freighter Wallet](https://www.freighter.app/) browser extension
+- Freighter set to **Stellar Testnet**
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/simple-payment-dapp.git
+cd simple-payment-dapp
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the development server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 🚀 How to Use
+
+1. **Install Freighter** — Download from [freighter.app](https://www.freighter.app)
+2. **Switch to Testnet** — In Freighter settings, select *Test SDF Network / Testnet*
+3. **Connect Wallet** — Click **Connect Wallet** in the navbar
+4. **Fund your account** — Click **Fund with Friendbot** to receive free test XLM
+5. **Send XLM** — Enter a destination address, amount, optional memo, and click **Send XLM**
+
+---
+
+## 📁 Project Structure
+
+```
+simple-payment-dapp/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx            # Wallet connect/disconnect, balance display
+│   │   ├── PaymentForm.jsx       # Send XLM form with validation
+│   │   └── TransactionStatus.jsx # Success/error modal with tx hash
+│   ├── utils/
+│   │   ├── constants.js          # Network config (Horizon URL, passphrase)
+│   │   └── contractABI.json      # Project metadata
+│   ├── App.jsx                   # Main app logic & state
+│   ├── main.jsx                  # React entry point
+│   └── index.css                 # Global styles
+├── vite.config.js
+├── package.json
+└── README.md
+```
+
+---
+
+## 🌐 Network Details
+
+| Property | Value |
+|---|---|
+| Network | Stellar Testnet |
+| Horizon URL | https://horizon-testnet.stellar.org |
+| Friendbot | https://friendbot.stellar.org |
+| Explorer | https://stellar.expert/explorer/testnet |
+
+---
+
+## 📋 Level 1 Checklist
+
+- [x] Freighter wallet setup on Stellar Testnet
+- [x] Wallet connect functionality
+- [x] Wallet disconnect functionality
+- [x] Fetch and display XLM balance
+- [x] Send XLM transaction on testnet
+- [x] Show success/failure feedback
+- [x] Display transaction hash with explorer link
+- [x] Error handling throughout
+
+---
+
+## 🏗 Build for Production
+
+```bash
+npm run build
+```
+
+Output will be in the `dist/` folder.
+
+---
+
+## 📄 License
+
+MIT

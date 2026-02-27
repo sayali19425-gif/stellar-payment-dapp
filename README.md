@@ -6,14 +6,17 @@ A minimal Stellar payment dApp built for **Level 1 (White Belt)** of the Stellar
 
 ## 📸 Screenshots
 
-### Wallet Connected
-![Wallet Connected](./screenshots/connected.png)
+### Wallet Button
+![Wallet Connected](./screenshots/wallet.png)<img width="1904" height="862" alt="wallet png" src="https://github.com/user-attachments/assets/13efbfd0-572d-41fd-8511-04d7bcac0307" />
 
-### Balance Displayed
-![Balance Displayed](./screenshots/balance.png)
+
+### Wallet Connected & Balance Displayed
+![Balance Displayed](./screenshots/connected.png)<img width="1908" height="845" alt="connected png" src="https://github.com/user-attachments/assets/6bb33e1d-200c-48ee-864c-2bcb1c6390f0" />
+
 
 ### Successful Transaction
 ![Successful Transaction](./screenshots/transaction.png)
+<img width="1774" height="860" alt="transaction png" src="https://github.com/user-attachments/assets/bec607ca-24c9-40a6-b32f-6d5416b5e795" />
 
 ---
 
